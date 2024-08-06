@@ -3,6 +3,7 @@ img{
   align-self: center;
 }
 
+
 .card{
   border: rgb(103, 102, 105) 3px solid;
   display: flex;  
@@ -12,7 +13,11 @@ img{
   margin-top: 1%;
   margin-bottom: 1%;
 }
-
+.btn{
+    background-color:rgb(97, 64, 128) !important; 
+    color:white !important;
+    margin:10px !important;
+}
 .row{
   display: flex;  
   flex: 1;
@@ -25,6 +30,50 @@ img{
 
 .container{
   justify-content: center;
+}
+
+.container2 {
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(201, 138, 226, 0.1);
+}
+
+.card2 {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.card img.image {
+    width: 100%;
+    height: auto;
+}
+
+.card2 .contact-info {
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.card2 img.icon {
+    width: 100px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
 }
 .details{
   font-size: 20px;
@@ -59,6 +108,7 @@ img{
   align-items: center;
   justify-content: center;
   flex:1
+  
 }
 
 .form_panel {
@@ -87,10 +137,20 @@ img{
 .nav_item{
   margin-left:15px;
   font-size: 20px;
-  color: black;
+  color: #FFF;
   align-self: center;
 }
 
+.nav-link-custom {
+    font-size: larger;
+    color: #FFF !important;
+}
+
+.nav-link-active {
+    font-size: larger;
+    color: yellow; /* Change this to your preferred active color */
+    font-weight: bold; /* Add any other styles you want for the active link */
+}
 .username{
   font: 30px sans-serif;
   color:black;

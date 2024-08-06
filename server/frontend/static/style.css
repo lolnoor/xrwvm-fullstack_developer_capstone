@@ -3,7 +3,6 @@ img{
   align-self: center;
 }
 
-
 .card{
   border: rgb(103, 102, 105) 3px solid;
   display: flex;  
@@ -33,48 +32,74 @@ img{
 }
 
 .container2 {
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-    margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center !important;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(201, 138, 226, 0.1);
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 25px;
+    box-shadow: 4px 4px 10px rgb(97, 64, 128);
+    border-width: 0cap;
+    overflow: hidden;
+    text-align: center;
 }
 
+/* Top section containing a single card */
+.top-section {
+    display: flex;
+    width: 60%;
+    align-items: center !important;
+    margin-left: 20%;
+
+}
+
+/* Bottom section containing two side-by-side cards */
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px rgb(216, 199, 231);
+    
+}
+
+/* Styling for each card */
 .card2 {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
     flex: 1;
-    min-width: 200px;
-    max-width: 300px;
     margin: 10px;
 }
 
-.card img.image {
+/* Image in the top card */
+.card2 img.image {
     width: 100%;
     height: auto;
+    
+
 }
 
+/* Contact information styling */
 .card2 .contact-info {
-    padding: 20px;
+
     font-size: 16px;
-    color: #333;
+    color: #203ed4e6;
 }
 
+/* Paragraphs inside contact information */
+.card2 .contact-info p {
+    margin: 5px 0;
+}
 
+/* Icon in the bottom card */
 .card2 img.icon {
-    width: 100px;
+    width: 60%;
     height: auto;
-    margin: 20px auto;
-    display: block;
+    border-right: solid 2px rgb(97, 64, 128);
+    margin-left: 8%
+  
 }
+
 .details{
   font-size: 20px;
   color: rgb(97, 64, 128);

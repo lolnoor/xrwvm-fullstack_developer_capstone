@@ -116,7 +116,7 @@ img{
 }
 
 .homepage_links{
-  color:  rgb(97, 64, 128);
+  color:#FFF !important;
   padding: 25%;
   font-size: larger;
   }
@@ -162,7 +162,7 @@ img{
 .nav_item{
   margin-left:15px;
   font-size: 20px;
-  color: #FFF;
+  color: #FFF !important;
   align-self: center;
 }
 

@@ -51,7 +51,7 @@ def registration(request):
     username_exist = False
 
     try:
-# Check if user already exists
+        # Check if user already exists
         User.objects.get(username=username)
         username_exist = True
     except User.DoesNotExist:
@@ -98,7 +98,7 @@ def get_cars(request):
     return JsonResponse({"CarModels": cars})
 
 
-# Update the `get_dealerships` view 
+# Update the `get_dealerships` view
 # to render the index page with a list of dealerships
 def get_dealerships(request, state="All"):
     if state == "All":
@@ -136,12 +136,13 @@ def get_dealer_reviews(request, dealer_id):
                 review_detail['sentiment'] = response['sentiment']
             else:
                 review_detail['sentiment'] = 'Unknown'
-            
+
             print(response)
-        
+
         return JsonResponse({"status": 200, "reviews": reviews})
     else:
         return JsonResponse({"status": 400, "message": "Bad Request"})
+
 
 # Create an `add_review` view to submit a review
 def add_review(request):
@@ -157,4 +158,3 @@ def add_review(request):
                                  "message": "Error in posting review"})
     else:
         return JsonResponse({"status": 403, "message": "Unauthorized"})
-

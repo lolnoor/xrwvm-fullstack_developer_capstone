@@ -27,10 +27,11 @@ SECRET_KEY =\
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+ORG_URL = [
+    'https://itcarr02-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+]
 ALLOWED_HOSTS = ['localhost', 'http://127.0.0.1:8000']
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000',
-    'https://itcarr02-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000', ORG_URL]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
@@ -93,8 +94,7 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME':
-        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
         'NAME':

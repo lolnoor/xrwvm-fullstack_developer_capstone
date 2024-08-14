@@ -40,7 +40,8 @@ class CarModel(models.Model):
     type = models.CharField(max_length=20,
                             choices=CAR_TYPES, default='SUV')
     year = models.IntegerField(default=2024,
-                               validators=[MaxValueValidator(2024), MinValueValidator(2015)])
+                               validators=[MaxValueValidator(2024),
+                                           MinValueValidator(2015)])
     car_make = models.ForeignKey(CarMake, on_delete=models.CASCADE)
 
     def __str__(self):

@@ -29,7 +29,7 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'http://127.0.0.1:8000']
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000', 
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000',
                         'https://itcarr02-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
                         'https://itcarr02-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/admin',
                         'https://itcarr02-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/admin/djangoapp/carmake/',

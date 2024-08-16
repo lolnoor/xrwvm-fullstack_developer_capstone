@@ -1,3 +1,4 @@
+In this project, I Practiced DevOps principles by employing CI/CD pipelines.
 Added user management to the Django application.
 
 Implemented user management using the Django user authentication system and create a REACT frontend.
